@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./nehemias.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styless.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+    <title>Kanelas Fashion</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./nehemias.ico" alt="Logo Kanelas ">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="item">
+                        <li><a href="#principal">Principal</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#acercade">Acerca de...</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="buscador">
+            <li>
+                <form action="">
+                    <input type="text" class="buscarOculto" name="buscar" id="input_bus" placeholder="que desea buscar">
+                    <a href="" id="buscando">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </form>
+            </li>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <section class="container_p" id="principal">
+            <h1>Consulta las ofertas en Accesorios</h1>
+            <p class="offert">
+                Los cinturones y billeteras se han convertido en una necesidad para los hombres contemporáneos, y que mejor que satisfacerla con productos elaborados en cuero natural. Conoce nuestra línea básica diseñada para usar todos los días. 
+            </p>
+            <div class="container_button">
+                <button type="button" class="buttom_ip">Si quiero ver </button>
+                <button type="button" class="buttom_ip">Super ofertas</button>
+            </div>
+        </section>
+        <section class="containers container_history" id="Historia">
+            <h2 class="subTitle">Historia</h2>
+            <p class="text_history">
+                Desde hace 25 años hemos estado  trabajando con el material llamado cuero (colombiano), hacemos, comercializamos y le damos la posibilidad al cliente que pueda reparar sus productos y que no los pierda, esta empresa es caracterizada por ser responsable, con una excelente atención y sobre todo es que son hacedores de la palabra
+                ¿por que se llama así?, nehemias lo puso el gerente principal llamado Jorge Alberto Martínez Alba hace muchos años y también porque es un nombre bíblico que quiere decir  "Jehová ha consolado
+            </p>
+            <button type="button" class="up">Arriba</button>
+        </section>
+        
+        <section class="containers container_services" id="Servicios">
+            <h2 class="subTitle">Servicios</h2>
+            <div class="service">
+                <i class="fas fa-shoe-prints"></i>
+                <h3 class="subService">venta de billeteras</h3>
+                <p>Los cinturones y billeteras se han convertido en una necesidad para los hombres contemporáneos, y que mejor que satisfacerla con productos elaborados en cuero natural. Conoce nuestra línea básica diseñada para usar todos los días.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-wrench"></i>
+                <h3 class="subService">venta de Zapatos en cuero</h3>
+                <p>Pensando en resaltar la naturalidad del cuero, hemos diseñado estas botas especialmente para ti. Un regalo perfecto para lucir con estilo
+                </p>
+            </div>
+
+            <div class="service">
+                <i class="fas fa-tshirt"></i>
+                <h3 class="subService">cinturones en cuero</h3>
+                <p>
+                    Conoce en nuestra nueva colección, cinturones para mujer con diseños exclusivos que resaltan el cuero natural
+                </p>
+            </div>
+            <button type="button" class="up">Arriba</button>
+        </section>
+        <section class="containers container_price">
+            <h2 class="subTitle">lista de precios y ofertas</h2>
+            <ul id="listPrice"></ul>
+            <template>
+                <div class="card_body">
+                    <li class="list-group">
+                        <p id="code"></p>
+                        <a href="">${element}</a>
+                        <p id="detail"></p>
+                    </li>
+                </div>
+            </template>
+                    <button type="button" class="up">Arriba</button>
+        </section>
+        <section class="containers container_contact">
+            <h2 class="subTitle">Contactos</h2>
+            <div class="elements_contact">
+                <form action="" id="form" class="form">
+                    <label for="names">Nombres:</label>
+                    <input type="text" id="names" />
+                    <label for="lastNames">Apellidos:</label>
+                    <input type="text" id="lastNames" />
+                    <label for="mail">Correo Electrónico:</label>
+                    <input type="email" id="mail" />
+                    <label for="celphone">Celular:</label>
+                    <input type="number" id="celphone" /><br />
+                    <div class="check">
+                        <input class="checkPolitica" type="checkbox" id="checkPolitica" />
+                        <label class="labelPolitica" for="checkPolitica">
+                        </label>
+                    </div>
+                    <p class="labelPolitica">Polítia de Datos
+                    </p>
+                    <button type="submit" id="btnSend" class="button_send">Enviar</button>
+                    <button type="reset" id="btnClear" class="button_clear">Limpiar</button>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5624.0115884440975!2d-74.08333341147737!3d4.633879001101501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a0f9bb0ce7%3A0x5d71ff487837183c!2sUniempresarial!5e0!3m2!1ses!2sco!4v1692899108382!5m2!1ses!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </form>
+            </div>
+        </section>
+        <section class="containers container_acercade">
+            <h2 class="subTitle">acerca de</h2>
+            <div>
+                Las mejores promociones para este mes, puedes disfrutar de nuestros productos que son 100% cuero colombiano
+            </div>
+            <button type="button" class="up">Arriba</button>
+        </section>
+
+    </main>
+    <script src="https://kit.fontawesome.com/7561002e8b.js" crossorigin="anonymous"></script>
+    <footer class="footer">
+        <div class="container_footer">
+            <h2 class="subTitle">Derechos reservados por nehemias cueros </h2>
+            <p>Sigueme en mis redes sociales</p>
+            <ul>
+                <li><a href=""><img class="nets" src="./facebook.png" alt=""></a></li>
+                <li><a href=""><img class="nets" src="./instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
